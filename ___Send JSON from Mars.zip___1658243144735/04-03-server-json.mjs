@@ -8,6 +8,7 @@ const server = createServer((request, response) => {
   response.setHeader("Content-Type", "application/json");
 
   const jsonResponseBody = JSON.stringify({ location: "Mars" });
+  //content length 19
 
   response.end(jsonResponseBody);
 });
